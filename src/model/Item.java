@@ -34,14 +34,8 @@ public abstract class Item {
     }
 
     public double getPrice() {
-        if (price < 0) {
-            throw new IllegalArgumentException("Price cannot be negative.");
-        }
-        else {
-            return price;
-        }
-        
-
+        return price;
     }
-    public abstract String getsummary();
+    
+    public abstract String getSummary();
 } 
