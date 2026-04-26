@@ -1,0 +1,66 @@
+OOP CONCEPTS MAPPING - UB Student Exchange
+
+1. CLASSES & OBJECTS
+   - Item, TextBook, Electronics, Clothing, User, ListingService, ReportService, InputHelper
+   - Each file defines a blueprint (class). The program creates objects from these classes.
+
+2. ENCAPSULATION
+   - Item class: fields are private (name, price, sellerName, category)
+   - Access only through public getters (getName(), getPrice(), etc.)
+   - Price validation in constructor (throws exception if price <= 0)
+
+3. CONSTRUCTORS
+   - Item(name, price, sellerName, category) - base class constructor
+   - TextBook uses super(name, price, sellerName, "Textbook") to call parent constructor
+   - User(name, studentId) - simple constructor
+
+4. COMPOSITION (HAS-A relationship)
+   - ListingService HAS-A ArrayList<Item> (listings field)
+   - User HAS-A ArrayList<Item> (postedItems field)
+   - Main HAS-A ListingService and ReportService
+
+5. INHERITANCE (IS-A relationship)
+   - TextBook extends Item
+   - Electronics extends Item
+   - Clothing extends Item
+   - All three subclasses inherit fields and methods from Item
+
+6. ABSTRACTION
+   - Item is an abstract class (cannot be instantiated directly)
+   - Item has abstract method: getSummary()
+   - Searchable is an interface with abstract method: matchesSearch()
+   - Subclasses MUST implement these abstract methods
+
+7. POLYMORPHISM
+   - getAll() returns ArrayList<Item> (can hold any Item subclass)
+   - When printing, each subclass calls its own getSummary() implementation
+   - ListingService.searchByKeyword() treats all items as Searchable interface type
+
+8. INTERFACE
+   - Searchable.java defines contract: boolean matchesSearch(String keyword)
+   - TextBook, Electronics, Clothing all implement Searchable
+   - Each provides its own matchesSearch() implementation
+
+9. COLLECTIONS FRAMEWORK
+   - ArrayList<Item> used in ListingService to store listings
+   - HashMap<String, ArrayList<Double>> used in ReportService for categories
+   - List<Item> used for search results
+
+10. PACKAGES
+    - app package: Main, SeedData
+    - model package: Item, TextBook, Electronics, Clothing, User
+    - service package: ListingService, ReportService
+    - contracts package: Searchable
+    - util package: InputHelper
+    - exceptions package: InvalidPriceException
+
+11. EXCEPTION HANDLING (ROBUSTNESS)
+    - try-catch in Main for NumberFormatException (invalid number input)
+    - InvalidPriceException thrown when price <= 0
+    - InputHelper class handles all user input safely
+
+12. GIT WORKFLOW
+    - Feature branch: feature/model-and-menu
+    - Multiple commits from all team members
+    - Tags: v1.0-final
+    - Collaboration via GitHub
