@@ -1,0 +1,54 @@
+CONTRIBUTION LOG – UB Student Exchange
+=======================================
+
+Project: UB Student Exchange Console Application
+Course: CSI142
+Semester: II 2025/26
+University of Botswana – Department of Computer Science
+
+TEAM CONTRIBUTIONS
+------------------
+
+Theo Kizito Tida (202302071) – @Tida3000 [Team Leader]
+- Created GitHub repository and project structure
+- Set up .gitignore, README.md, and feature branch
+- Developed Main.java with complete menu system
+- Implemented SeedData.java with sample listings
+- Created User.java model class
+- Developed InvalidPriceException.java for error handling
+- Built InputHelper.java utility class
+- Wrote oop_mapping.txt documentation
+- Integrated all components and ensured project runs
+- Managed final merge to main branch and tagged v1.0-final
+- Coordinated team efforts and final submission
+
+Shumirayi Tyra Makufa (202501139) – @TyraMakufa
+- Contributed to the design of Item.java abstract class
+- Assisted with TextBook.java implementation
+- Provided input on OOP concepts mapping
+- Reviewed and tested early versions of the application
+
+Kemmonye Amos (202401634) – @kemmonye200
+- Contributed to Electronics.java and Clothing.java classes
+- Participated in Searchable.java interface design
+- Helped test input validation and error handling
+- Provided feedback on market summary report feature
+
+Ame Modise (202402492) – @AmieMod
+- Contributed to ListingService.java core logic
+- Assisted with ReportService.java implementation
+- Created initial draft of class diagram
+- Helped document sample run output
+
+SUMMARY
+--------
+Total Java files: 12
+Total documentation files: 5
+Total commits: 14+
+All milestone deadlines met
+Application runs without errors
+
+-------------------------------------------
+Note: All team members collaborated effectively
+to complete this project successfully.
+-------------------------------------------

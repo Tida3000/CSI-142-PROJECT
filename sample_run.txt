@@ -1,0 +1,152 @@
+===== UB STUDENT EXCHANGE =====
+Welcome! Loaded 9 sample listings.
+
+==============================
+1. Add a listing
+2. View all listings
+3. Search listings
+4. Market summary report
+5. Remove a listing
+0. Exit
+==============================
+Enter choice: 2
+
+--- All Listings ---
+0. [TEXTBOOK] Java Programming | Course: CSI142 | P350.0 | Seller: Theo
+1. [TEXTBOOK] Data Structures | Course: CSI132 | P280.0 | Seller: Tyra
+2. [TEXTBOOK] Database Systems | Course: CSI251 | P320.0 | Seller: Kemmonye
+3. [ELECTRONICS] Scientific Calculator | Brand: Casio | P150.0 | Seller: Ame
+4. [ELECTRONICS] USB Flash Drive 64GB | Brand: SanDisk | P45.0 | Seller: Theo
+5. [ELECTRONICS] Laptop Cooling Pad | Brand: CoolerMaster | P120.0 | Seller: Tyra
+6. [CLOTHING] UB Hoodie | Size: Large | P85.0 | Seller: Kemmonye
+7. [CLOTHING] Lab Coat | Size: Medium | P60.0 | Seller: Ame
+8. [CLOTHING] Programming T-Shirt | Size: XL | P25.0 | Seller: Theo
+
+==============================
+1. Add a listing
+2. View all listings
+3. Search listings
+4. Market summary report
+5. Remove a listing
+0. Exit
+==============================
+Enter choice: 3
+
+Enter keyword to search: programming
+
+--- Search Results ---
+[TEXTBOOK] Java Programming | Course: CSI142 | P350.0 | Seller: Theo
+[CLOTHING] Programming T-Shirt | Size: XL | P25.0 | Seller: Theo
+
+==============================
+1. Add a listing
+2. View all listings
+3. Search listings
+4. Market summary report
+5. Remove a listing
+0. Exit
+==============================
+Enter choice: 4
+
+***********************************
+*** MARKET SUMMARY REPORT ***
+***********************************
+Total listings: 9
+Overall average price: P159.44
+
+--- By Category ---
+  Textbook    : P316.67 (3 items)
+  Electronics : P105.00 (3 items)
+  Clothing    : P56.67 (3 items)
+***********************************
+
+==============================
+1. Add a listing
+2. View all listings
+3. Search listings
+4. Market summary report
+5. Remove a listing
+0. Exit
+==============================
+Enter choice: 1
+
+--- Add New Listing ---
+1. Textbook
+2. Electronics
+3. Clothing
+Select type: 1
+Title: Artificial Intelligence
+Price: 450
+Seller name: Theo
+Course code: CSI499
+Listing added successfully!
+
+==============================
+1. Add a listing
+2. View all listings
+3. Search listings
+4. Market summary report
+5. Remove a listing
+0. Exit
+==============================
+Enter choice: 2
+
+--- All Listings ---
+0. [TEXTBOOK] Java Programming | Course: CSI142 | P350.0 | Seller: Theo
+1. [TEXTBOOK] Data Structures | Course: CSI132 | P280.0 | Seller: Tyra
+2. [TEXTBOOK] Database Systems | Course: CSI251 | P320.0 | Seller: Kemmonye
+3. [ELECTRONICS] Scientific Calculator | Brand: Casio | P150.0 | Seller: Ame
+4. [ELECTRONICS] USB Flash Drive 64GB | Brand: SanDisk | P45.0 | Seller: Theo
+5. [ELECTRONICS] Laptop Cooling Pad | Brand: CoolerMaster | P120.0 | Seller: Tyra
+6. [CLOTHING] UB Hoodie | Size: Large | P85.0 | Seller: Kemmonye
+7. [CLOTHING] Lab Coat | Size: Medium | P60.0 | Seller: Ame
+8. [CLOTHING] Programming T-Shirt | Size: XL | P25.0 | Seller: Theo
+9. [TEXTBOOK] Artificial Intelligence | Course: CSI499 | P450.0 | Seller: Theo
+
+==============================
+1. Add a listing
+2. View all listings
+3. Search listings
+4. Market summary report
+5. Remove a listing
+0. Exit
+==============================
+Enter choice: 5
+
+--- All Listings ---
+0. [TEXTBOOK] Java Programming | Course: CSI142 | P350.0 | Seller: Theo
+1. [TEXTBOOK] Data Structures | Course: CSI132 | P280.0 | Seller: Tyra
+2. [TEXTBOOK] Database Systems | Course: CSI251 | P320.0 | Seller: Kemmonye
+3. [ELECTRONICS] Scientific Calculator | Brand: Casio | P150.0 | Seller: Ame
+4. [ELECTRONICS] USB Flash Drive 64GB | Brand: SanDisk | P45.0 | Seller: Theo
+5. [ELECTRONICS] Laptop Cooling Pad | Brand: CoolerMaster | P120.0 | Seller: Tyra
+6. [CLOTHING] UB Hoodie | Size: Large | P85.0 | Seller: Kemmonye
+7. [CLOTHING] Lab Coat | Size: Medium | P60.0 | Seller: Ame
+8. [CLOTHING] Programming T-Shirt | Size: XL | P25.0 | Seller: Theo
+9. [TEXTBOOK] Artificial Intelligence | Course: CSI499 | P450.0 | Seller: Theo
+Enter index number to remove: 9
+Listing removed successfully!
+
+==============================
+1. Add a listing
+2. View all listings
+3. Search listings
+4. Market summary report
+5. Remove a listing
+0. Exit
+==============================
+Enter choice: 0
+
+Goodbye!
+
+TESTING VERIFICATION:
+Add new listing – Working
+View all listings – Working  
+Search by keyword – Working
+Market summary report – Working
+Remove listing – Working
+Input validation – Working (invalid entries handled gracefully)
+No crashes during extended testing
+All menu options functional
+
+Sample run executed by: Team UB Exchange
