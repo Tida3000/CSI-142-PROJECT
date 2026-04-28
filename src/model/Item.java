@@ -1,35 +1,31 @@
-
 package model;
 
 public abstract class Item {
-    private String ItemName;
-    private String SellerName;
-    private Category category;
+    private String name;
+    private String sellerName;
+    private String category;  // Changed from Category enum to String
     private double price;
 
-    public Item(String itemName, String sellerName, Category category, double price) {
-        if (price < 0) {
-            throw new IllegalArgumentException("Price cannot be negative.");
+    public Item(String name, double price, String sellerName, String category) {
+        if (price <= 0) {
+            throw new IllegalArgumentException("Price cannot be negative or zero.");
         }
-        else {
-            this.price = price; 
-        }
-        this.ItemName = itemName;
-        this.SellerName = sellerName;
+        this.name = name;
+        this.price = price;
+        this.sellerName = sellerName;
         this.category = category;
-        
     }
 
     // Getters 
-    public String getItemName() {
-        return ItemName;
+    public String getName() {
+        return name;
     }  
 
     public String getSellerName() {
-        return SellerName;
+        return sellerName;
     }
 
-    public Category getCategory() {
+    public String getCategory() {
         return category;
     }
 
@@ -38,4 +34,4 @@ public abstract class Item {
     }
     
     public abstract String getSummary();
-} 
+}

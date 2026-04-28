@@ -13,6 +13,9 @@ This is a Java console application that allows University of Botswana students t
 ## How to Run
 
 Compile:
+javac -d bin src/app/*.java src/model/*.java src/service/*.java src/contracts/*.java src/util/*.java src/exceptions/*.java
+
+OR 
 javac -d bin src/**/*.java
 
 Run:

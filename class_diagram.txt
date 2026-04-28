@@ -1,0 +1,55 @@
+CLASS DIAGRAM - UB Student Exchange
+====================================
+
+Searchable (interface)
+  - matchesSearch(String keyword)
+
+Item (abstract class)
+  - name, price, sellerName, category
+  - getters and getSummary()
+
+TextBook extends Item implements Searchable
+  - courseCode
+
+Electronics extends Item implements Searchable
+  - brand
+
+Clothing extends Item implements Searchable
+  - size
+
+ListingService
+  - ArrayList<Item> listings
+  - addListing(), getAll(), searchByKeyword(), removeByIndex()
+
+ReportService
+  - generateMarketSummary()
+
+User
+  - name, studentId, postedItems
+
+Main
+  - main menu and all user input
+
+InputHelper
+  - readInt(), readDouble(), readString()
+
+InvalidPriceException
+  - custom exception for price errors
+
+Packages:
+  app -> Main, SeedData
+  model -> Item, TextBook, Electronics, Clothing, User
+  service -> ListingService, ReportService
+  contracts -> Searchable
+  util -> InputHelper
+  exceptions -> InvalidPriceException
+
+What extends what:
+  TextBook, Electronics, Clothing all extend Item
+
+What implements what:
+  TextBook, Electronics, Clothing all implement Searchable
+
+What uses what:
+  Main uses ListingService and ReportService
+  ListingService stores Items
